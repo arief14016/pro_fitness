@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro_fitness/pages/main_pages/home_page.dart';
+import 'package:pro_fitness/pages/main_pages/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -23,7 +24,7 @@ class _MainPageState extends State<MainPage> {
       HomePage(),
       HomePage(),
       HomePage(),
-      HomePage(),
+      ProfilePage(),
     ];
 
     final _bottomNavigationItems = <BottomNavigationBarItem>[
@@ -35,15 +36,15 @@ class _MainPageState extends State<MainPage> {
       ),
       const BottomNavigationBarItem(
         icon: ImageIcon(
-          AssetImage('assets/icon_excercise.png'),
-        ),
-        label: 'Excercise',
-      ),
-      const BottomNavigationBarItem(
-        icon: ImageIcon(
           AssetImage('assets/icon_meal.png'),
         ),
         label: 'Meal Plans',
+      ),
+      const BottomNavigationBarItem(
+        icon: ImageIcon(
+          AssetImage('assets/icon_excercise.png'),
+        ),
+        label: 'Excercise',
       ),
       const BottomNavigationBarItem(
         icon: ImageIcon(
